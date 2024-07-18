@@ -103,6 +103,22 @@ section {
     .apps {
         grid-template-columns: repeat(2, 1fr); /* Two columns */
     }
+
+    .hello h1 {
+        font-size: 64px;
+    }
+
+    .corner-image img {
+        max-width: 75px;
+        max-height: 75px;
+    }
+    .corner-image2 img {
+        max-width: 75px;
+        max-height: 75px;
+    }
+    .app h1 {
+        font-size: 18px;
+    }
 }
 
 @media (min-width: 900px) {
