@@ -13,3 +13,18 @@ const observer = new IntersectionObserver((entries) => {
 
 const hidden_element = document.querySelectorAll('.hidden');
 hidden_element.forEach((el) => observer.observe(el));
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}

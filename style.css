@@ -218,3 +218,51 @@ hr {
 .app_container:nth-child(6){
     transition-delay: 600ms;
 }
+
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    padding: 18px;
+    width: 50%;
+    outline: none;
+    transition: 0.4s;
+    border-radius: 25px;
+    background-color: transparent; /* Make background transparent */
+    cursor: pointer; /* Change cursor to pointer */
+    box-shadow: none;
+    border: none;
+    color: #d0cbf7;
+    font-size: 24px;
+    text-align: left;
+}
+  
+.accordion:after {
+    content: '+'; /* Unicode character for "plus" sign (+) */
+    font-size: 26px;
+    color: #d0cbf7;
+    float: right;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.active:after {
+    content: "-"; /* Unicode character for "minus" sign (-) */
+}
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+    background-color: #d0cbf70a; /* Semi-transparent hover background */
+}
+
+.panel {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: transparent; /* Make background transparent */
+    text-align: left;
+    max-width: 40%;
+}
+.panel h1 {
+    font-size: 18px;
+
+}
