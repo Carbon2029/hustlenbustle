@@ -144,6 +144,7 @@ section {
     margin: 8px;
     background-color: #161b22;
     border: solid 1px #31363d;
+    cursor: pointer;
 }
 
 .app:hover {
@@ -265,4 +266,30 @@ hr {
 .panel h1 {
     font-size: 18px;
 
+}
+
+footer .socials img {
+
+    filter: brightness(0) saturate(100%) invert(18%) sepia(9%) saturate(746%) hue-rotate(177deg) brightness(89%) contrast(90%);
+}
+
+footer .socials img {
+    max-width: 50px;
+    max-height: 50px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+footer .socials img:hover {
+    transform:scale(1.1);
+    transition: all ease-in-out 0.1s;
+}
+
+.testing {
+    width: 50px;
+    height: 15px;
+    background-color: #8985a3;
+    border-radius: 7px;
+    font-size: 12px;
+    text-align: center;
 }
